@@ -100,6 +100,12 @@ class Decipherer:
         return key
 
     def get_best_key_char(self, index, predicted_key):
+        """
+        Finds the best char for the key at a given index so that it decrypts the given ciphers.
+        :param index: index at which the char is placed
+        :param predicted_key: the dictionary holding the probability of occurrence for XOR-ed chars
+        :return: best character to put at a given index
+        """
         best_char_match = ord(' ')
         best_num_of_matches = 0
         ciphers_to_examine = []
