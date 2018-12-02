@@ -1,0 +1,38 @@
+{% extends 'onlinebank/base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<div class="article">
+    <h3>Transfer history</h3>
+    {% csrf_token %}
+    <div>
+        <table class="pure-table pure-table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Receiver</th>
+                    <th>Title</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for t in transfers %}
+                <tr>
+                    <td>{{ t.date }}</td>
+                    <td>{{ t.to_account }}</td>
+                    <td>{{ t.title }}</td>
+                    <td>{{ t.amount }} PLN</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% else %}
+<div class="article">
+    <h3>User not logged in</h3>
+    <p>Please <a href={% url 'login' %}>log in</a> first</p>
+</div>
+{% endif %}
+
+{% endblock %}
