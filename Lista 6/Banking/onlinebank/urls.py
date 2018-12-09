@@ -6,7 +6,7 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('transfers/home', views.home, name="home"),
+    # path('transfers/home', views.home, name="home"),
 
     path('transfers/new', views.new_transfer, name="new_transfer"),
     path('transfers/confirm', views.confirm_transfer, name="confirm_transfer"),

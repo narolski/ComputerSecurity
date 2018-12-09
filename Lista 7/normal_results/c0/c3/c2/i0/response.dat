@@ -1,0 +1,2629 @@
+HTTP/1.1 500 Internal Server Error
+Date: Sat, 01 Dec 2018 10:28:01 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Length: 163905
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>NoReverseMatch
+          at /transfers/new</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h2 span { font-size:80%; color:#666; font-weight:normal; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#666; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#505050; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em;}
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+  </style>
+  
+  <script type="text/javascript">
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('table.vars'));
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.textContent = s.textContent == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>NoReverseMatch
+       at /transfers/new</h1>
+  <pre class="exception_value">Reverse for &#39;login&#39; not found. &#39;login&#39; is not a valid view function or pattern name.</pre>
+  <table class="meta">
+
+    <tr>
+      <th>Request Method:</th>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>http://127.0.0.1:8000/transfers/new</td>
+    </tr>
+
+    <tr>
+      <th>Django Version:</th>
+      <td>2.1.3</td>
+    </tr>
+
+    <tr>
+      <th>Exception Type:</th>
+      <td>NoReverseMatch</td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>Reverse for &#39;login&#39; not found. &#39;login&#39; is not a valid view function or pattern name.</pre></td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Location:</th>
+      <td>/home/parallels/.local/lib/python3.5/site-packages/django/urls/resolvers.py in _reverse_with_prefix, line 622</td>
+    </tr>
+
+    <tr>
+      <th>Python Executable:</th>
+      <td>/usr/bin/python3</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>3.5.3</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#39;/home/parallels/.local/share/Trash/files/Banking&#39;,
+ &#39;/usr/lib/python35.zip&#39;,
+ &#39;/usr/lib/python3.5&#39;,
+ &#39;/usr/lib/python3.5/plat-x86_64-linux-gnu&#39;,
+ &#39;/usr/lib/python3.5/lib-dynload&#39;,
+ &#39;/home/parallels/.local/lib/python3.5/site-packages&#39;,
+ &#39;/usr/local/lib/python3.5/dist-packages&#39;,
+ &#39;/usr/lib/python3/dist-packages&#39;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>So, 1 Gru 2018 11:28:01 +0100</td>
+    </tr>
+  </table>
+</div>
+
+
+
+<div id="template">
+   <h2>Error during template rendering</h2>
+   <p>In template <code>/home/parallels/.local/share/Trash/files/Banking/onlinebank/templates/onlinebank/base.html</code>, error at line <strong>12</strong></p>
+   <h3>Reverse for &#39;login&#39; not found. &#39;login&#39; is not a valid view function or pattern name.</h3>
+   <table class="source cut-top
+       cut-bottom">
+   
+   
+      <tr><th>2</th>
+      <td>
+</td></tr>
+   
+   
+   
+      <tr><th>3</th>
+      <td>&lt;!DOCTYPE html&gt; 
+</td></tr>
+   
+   
+   
+      <tr><th>4</th>
+      <td>&lt;html lang=&quot;pl&quot;&gt; 
+</td></tr>
+   
+   
+   
+      <tr><th>5</th>
+      <td>&lt;head&gt;  
+</td></tr>
+   
+   
+   
+      <tr><th>6</th>
+      <td>    &lt;meta charset=&quot;utf-8&quot;&gt; 
+</td></tr>
+   
+   
+   
+      <tr><th>7</th>
+      <td>    &lt;title&gt;Jeleniogórska Zachodnia Grupa Kredytowa&lt;/title&gt; 
+</td></tr>
+   
+   
+   
+      <tr><th>8</th>
+      <td>    &lt;meta name=&quot;description&quot; content=&quot;My Journey Through Computer Science&quot;&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>9</th>
+      <td>    &lt;meta name=&quot;author&quot; content=&quot;Paweł Narolski&quot;&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>10</th>
+      <td>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>11</th>
+      <td>    &lt;link rel=&quot;stylesheet&quot; href=&quot;{% static &#39;css/style.css&#39; %}&quot;&gt;
+</td></tr>
+   
+   
+   
+   <tr class="error"><th>12</th>
+     <td>    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.co<span class="specific">m/purecss@1.0.0/b</span>uild/pure-min.css&quot; integrity=&quot;sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w&quot; crossorigin=&quot;anonymous&quot;&gt;
+</td>
+   </tr>
+   
+   
+   
+      <tr><th>13</th>
+      <td>
+</td></tr>
+   
+   
+   
+      <tr><th>14</th>
+      <td>&lt;/head&gt; 
+</td></tr>
+   
+   
+   
+      <tr><th>15</th>
+      <td>&lt;body&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>16</th>
+      <td>    &lt;div class=&quot;header&quot;&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>17</th>
+      <td>        &lt;div class=&quot;branding&quot;&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>18</th>
+      <td>            &lt;div class=&quot;logo&quot;&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>19</th>
+      <td>                &lt;a class=&quot;logo-link&quot; href=&quot;{% url &#39;home&#39; %}&quot;&gt;JZGSKi Online Banking&lt;/a&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>20</th>
+      <td>                &lt;h2&gt;Jeleniogórska Zachodnia Grupa Spółdzielczo-Kredytowa S.A.&lt;/h2&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>21</th>
+      <td>            &lt;/div&gt;
+</td></tr>
+   
+   
+   
+      <tr><th>22</th>
+      <td>            &lt;div class=&quot;menu-container&quot;&gt;
+</td></tr>
+   
+   
+   </table>
+</div>
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/core/handlers/exception.py</code> in <code>inner</code>
+
+          
+            <div class="context" id="c140270091856456">
+              
+                <ol start="27" class="pre-context" id="pre140270091856456">
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    This decorator is automatically applied to all middleware to ensure that</pre></li>
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    no middleware leaks an exception and that the next middleware in the stack</pre></li>
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    can rely on getting a response instead of an exception.</pre></li>
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="34" class="context-line">
+                <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>            response = get_response(request)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='35' class="post-context" id="post140270091856456">
+                  
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>            response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre>    return inner</pre></li>
+                  
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270091856456', 'post140270091856456')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270091856456')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270091856456">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>NoReverseMatch(&quot;Reverse for &#39;login&#39; not found. &#39;login&#39; is not a valid view function or pattern name.&quot;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f932ec26630&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/core/handlers/base.py</code> in <code>_get_response</code>
+
+          
+            <div class="context" id="c140270091854344">
+              
+                <ol start="119" class="pre-context" id="pre140270091854344">
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>                break</pre></li>
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>            try:</pre></li>
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>            except Exception as e:</pre></li>
+                
+                </ol>
+              
+              <ol start="126" class="context-line">
+                <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>                response = self.process_exception_by_middleware(e, request)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='127' class="post-context" id="post140270091854344">
+                  
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>        if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>
+                  
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>                view_name = callback.__name__</pre></li>
+                  
+                  <li onclick="toggle('pre140270091854344', 'post140270091854344')"><pre>            else:                                           # CBV</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270091854344')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270091854344">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function new_transfer at 0x7f932dbd1268&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f93313d7d68&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver</td>
+                    <td class="code"><pre>&lt;URLResolver &#39;banking.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver_match</td>
+                    <td class="code"><pre>ResolverMatch(func=onlinebank.views.new_transfer, args=(), kwargs={}, url_name=new_transfer, app_names=[], namespaces=[])</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f932ec26630&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function new_transfer at 0x7f932dbd1268&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/core/handlers/base.py</code> in <code>_get_response</code>
+
+          
+            <div class="context" id="c140270100528264">
+              
+                <ol start="117" class="pre-context" id="pre140270100528264">
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>            response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>            if response:</pre></li>
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>                break</pre></li>
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="124" class="context-line">
+                <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='125' class="post-context" id="post140270100528264">
+                  
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>            except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>        if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528264', 'post140270100528264')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100528264')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100528264">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function new_transfer at 0x7f932dbd1268&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f93313d7d68&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver</td>
+                    <td class="code"><pre>&lt;URLResolver &#39;banking.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver_match</td>
+                    <td class="code"><pre>ResolverMatch(func=onlinebank.views.new_transfer, args=(), kwargs={}, url_name=new_transfer, app_names=[], namespaces=[])</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f932ec26630&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function new_transfer at 0x7f932dbd1268&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/parallels/.local/share/Trash/files/Banking/onlinebank/views.py</code> in <code>new_transfer</code>
+
+          
+            <div class="context" id="c140270100527560">
+              
+                <ol start="21" class="pre-context" id="pre140270100527560">
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>            req.save()</pre></li>
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>            </pre></li>
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>            return redirect(&#39;confirm_transfer&#39;)</pre></li>
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>        form = NewTransferForm()</pre></li>
+                
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="28" class="context-line">
+                <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>    return render(request, &#39;onlinebank/new_transfer.html&#39;, {&#39;form&#39;: form})</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='29' class="post-context" id="post140270100527560">
+                  
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>def confirm_transfer(request):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>    requests = [_ for _ in models.TransferRequest.objects.all() if _.from_account == request.user]</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>    transfer_request = requests.pop(-1)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527560', 'post140270100527560')"><pre>    if request.method == &quot;POST&quot;:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100527560')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100527560">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>form</td>
+                    <td class="code"><pre>&lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/shortcuts.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100525704">
+              
+                <ol start="29" class="pre-context" id="pre140270100525704">
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>def render(request, template_name, context=None, content_type=None, status=None, using=None):</pre></li>
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    Return a HttpResponse whose content is filled with the result of calling</pre></li>
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    django.template.loader.render_to_string() with the passed arguments.</pre></li>
+                
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                </ol>
+              
+              <ol start="36" class="context-line">
+                <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    content = loader.render_to_string(template_name, context, request, using=using)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='37' class="post-context" id="post140270100525704">
+                  
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    return HttpResponse(content, content_type, status)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>def redirect(to, *args, permanent=False, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525704', 'post140270100525704')"><pre>    Return an HttpResponseRedirect to the appropriate URL for the arguments</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100525704')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100525704">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>content_type</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>status</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>template_name</td>
+                    <td class="code"><pre>&#39;onlinebank/new_transfer.html&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>using</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/loader.py</code> in <code>render_to_string</code>
+
+          
+            <div class="context" id="c140270100528392">
+              
+                <ol start="55" class="pre-context" id="pre140270100528392">
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>    template_name may be a string or a list of strings.</pre></li>
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>    if isinstance(template_name, (list, tuple)):</pre></li>
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>        template = select_template(template_name, using=using)</pre></li>
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>        template = get_template(template_name, using=using)</pre></li>
+                
+                </ol>
+              
+              <ol start="62" class="context-line">
+                <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>    return template.render(context, request)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='63' class="post-context" id="post140270100528392">
+                  
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>def _engine_list(using=None):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528392', 'post140270100528392')"><pre>    return engines.all() if using is None else [engines[using]]</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100528392')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100528392">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>template</td>
+                    <td class="code"><pre>&lt;django.template.backends.django.Template object at 0x7f932eacd7f0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>template_name</td>
+                    <td class="code"><pre>&#39;onlinebank/new_transfer.html&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>using</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/backends/django.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100526088">
+              
+                <ol start="54" class="pre-context" id="pre140270100526088">
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>    @property</pre></li>
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>    def origin(self):</pre></li>
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>        return self.template.origin</pre></li>
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>    def render(self, context=None, request=None):</pre></li>
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>        context = make_context(context, request, autoescape=self.backend.engine.autoescape)</pre></li>
+                
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="61" class="context-line">
+                <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>            return self.template.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='62' class="post-context" id="post140270100526088">
+                  
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>        except TemplateDoesNotExist as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>            reraise(exc, self.backend)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>def copy_exception(exc, backend=None):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526088', 'post140270100526088')"><pre>    &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100526088')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100526088">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/transfers/new&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.template.backends.django.Template object at 0x7f932eacd7f0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100525960">
+              
+                <ol start="164" class="pre-context" id="pre140270100525960">
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>    def render(self, context):</pre></li>
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>        &quot;Display stage -- can be called many times&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>        with context.render_context.push_state(self):</pre></li>
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>            if context.template is None:</pre></li>
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>                with context.bind_template(self):</pre></li>
+                
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>                    context.template_name = self.name</pre></li>
+                
+                </ol>
+              
+              <ol start="171" class="context-line">
+                <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>                    return self._render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='172' class="post-context" id="post140270100525960">
+                  
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>                return self._render(context)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>    def compile_nodelist(self):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525960', 'post140270100525960')"><pre>        Parse and compile the template source into a nodelist. If debug</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100525960')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100525960">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.template.base.Template object at 0x7f932d7a9b70&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>_render</code>
+
+          
+            <div class="context" id="c140270100528712">
+              
+                <ol start="156" class="pre-context" id="pre140270100528712">
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>        self.nodelist = self.compile_nodelist()</pre></li>
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>    def __iter__(self):</pre></li>
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>        for node in self.nodelist:</pre></li>
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>            yield from node</pre></li>
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>    def _render(self, context):</pre></li>
+                
+                </ol>
+              
+              <ol start="163" class="context-line">
+                <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>        return self.nodelist.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='164' class="post-context" id="post140270100528712">
+                  
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>    def render(self, context):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>        &quot;Display stage -- can be called many times&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>        with context.render_context.push_state(self):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>            if context.template is None:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528712', 'post140270100528712')"><pre>                with context.bind_template(self):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100528712')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100528712">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.template.base.Template object at 0x7f932d7a9b70&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100525384">
+              
+                <ol start="930" class="pre-context" id="pre140270100525384">
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>    # extend_nodelist().</pre></li>
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>    contains_nontext = False</pre></li>
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>    def render(self, context):</pre></li>
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>        bits = []</pre></li>
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>        for node in self:</pre></li>
+                
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>            if isinstance(node, Node):</pre></li>
+                
+                </ol>
+              
+              <ol start="937" class="context-line">
+                <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>                bit = node.render_annotated(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='938' class="post-context" id="post140270100525384">
+                  
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>                bit = node</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>            bits.append(str(bit))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>        return mark_safe(&#39;&#39;.join(bits))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100525384', 'post140270100525384')"><pre>    def get_nodes_by_type(self, nodetype):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100525384')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100525384">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>bits</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>node</td>
+                    <td class="code"><pre>&lt;ExtendsNode: extends &#39;onlinebank/base.html&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>[&lt;ExtendsNode: extends &#39;onlinebank/base.html&#39;&gt;]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render_annotated</code>
+
+          
+            <div class="context" id="c140270100527048">
+              
+                <ol start="897" class="pre-context" id="pre140270100527048">
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        Render the node. If debug is True and an exception occurs during</pre></li>
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        rendering, the exception is annotated with contextual line information</pre></li>
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        where it occurred in the template. For internal usage this method is</pre></li>
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        preferred over using the render method directly.</pre></li>
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="904" class="context-line">
+                <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>            return self.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='905' class="post-context" id="post140270100527048">
+                  
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>        except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>            if context.template.engine.debug and not hasattr(e, &#39;template_debug&#39;):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>                e.template_debug = context.render_context.template.get_exception_info(e, self.token)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>            raise</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527048', 'post140270100527048')"><pre>    def __iter__(self):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100527048')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100527048">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;ExtendsNode: extends &#39;onlinebank/base.html&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/loader_tags.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100526344">
+              
+                <ol start="143" class="pre-context" id="pre140270100526344">
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>                              compiled_parent.nodelist.get_nodes_by_type(BlockNode)}</pre></li>
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>                    block_context.add_blocks(blocks)</pre></li>
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>                break</pre></li>
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>        # Call Template._render explicitly so the parser context stays</pre></li>
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>        # the same.</pre></li>
+                
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>        with context.render_context.push_state(compiled_parent, isolated_context=False):</pre></li>
+                
+                </ol>
+              
+              <ol start="150" class="context-line">
+                <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>            return compiled_parent._render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='151' class="post-context" id="post140270100526344">
+                  
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>class IncludeNode(Node):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>    context_key = &#39;__include_context&#39;</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526344', 'post140270100526344')"><pre>    def __init__(self, template, *args, extra_context=None, isolated_context=False, **kwargs):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100526344')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100526344">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>block_context</td>
+                    <td class="code"><pre>&lt;django.template.loader_tags.BlockContext object at 0x7f932d7a9dd8&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>blocks</td>
+                    <td class="code"><pre>{&#39;content&#39;: &lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n        &#39;&gt;]&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>compiled_parent</td>
+                    <td class="code"><pre>&lt;django.template.base.Template object at 0x7f932cdbcbe0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>node</td>
+                    <td class="code"><pre>&lt;django.template.defaulttags.LoadNode object at 0x7f932d00e940&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;ExtendsNode: extends &#39;onlinebank/base.html&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>_render</code>
+
+          
+            <div class="context" id="c140270100526984">
+              
+                <ol start="156" class="pre-context" id="pre140270100526984">
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>        self.nodelist = self.compile_nodelist()</pre></li>
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>    def __iter__(self):</pre></li>
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>        for node in self.nodelist:</pre></li>
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>            yield from node</pre></li>
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>    def _render(self, context):</pre></li>
+                
+                </ol>
+              
+              <ol start="163" class="context-line">
+                <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>        return self.nodelist.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='164' class="post-context" id="post140270100526984">
+                  
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>    def render(self, context):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>        &quot;Display stage -- can be called many times&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>        with context.render_context.push_state(self):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>            if context.template is None:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526984', 'post140270100526984')"><pre>                with context.bind_template(self):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100526984')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100526984">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.template.base.Template object at 0x7f932cdbcbe0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100526856">
+              
+                <ol start="930" class="pre-context" id="pre140270100526856">
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>    # extend_nodelist().</pre></li>
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>    contains_nontext = False</pre></li>
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>    def render(self, context):</pre></li>
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>        bits = []</pre></li>
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>        for node in self:</pre></li>
+                
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>            if isinstance(node, Node):</pre></li>
+                
+                </ol>
+              
+              <ol start="937" class="context-line">
+                <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>                bit = node.render_annotated(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='938' class="post-context" id="post140270100526856">
+                  
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>                bit = node</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>            bits.append(str(bit))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>        return mark_safe(&#39;&#39;.join(bits))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526856', 'post140270100526856')"><pre>    def get_nodes_by_type(self, nodetype):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100526856')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100526856">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>bit</td>
+                    <td class="code"><pre>(&#39;&quot; class=&quot;active&quot;&gt;History&lt;/a&gt;&lt;/li&gt;\n&#39;
+ &#39;                &lt;/ul&gt;\n&#39;
+ &#39;            &lt;/div&gt;\n&#39;
+ &#39;        &lt;/div&gt;\n&#39;
+ &#39;    &lt;/div&gt;\n&#39;
+ &#39;    &lt;div class=&quot;content&quot;&gt;\n&#39;
+ &#39;        &#39;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>bits</td>
+                    <td class="code"><pre>[&#39;&#39;,
+ &#39;\n&#39;
+ &#39;\n&#39;
+ &#39;&lt;!DOCTYPE html&gt; \n&#39;
+ &#39;&lt;html lang=&quot;pl&quot;&gt; \n&#39;
+ &#39;&lt;head&gt;  \n&#39;
+ &#39;    &lt;meta charset=&quot;utf-8&quot;&gt; \n&#39;
+ &#39;    &lt;title&gt;Jeleniogórska Zachodnia Grupa Kredytowa&lt;/title&gt; \n&#39;
+ &#39;    &lt;meta name=&quot;description&quot; content=&quot;My Journey Through Computer Science&quot;&gt;\n&#39;
+ &#39;    &lt;meta name=&quot;author&quot; content=&quot;Paweł Narolski&quot;&gt;\n&#39;
+ &#39;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;\n&#39;
+ &#39;    &lt;link rel=&quot;stylesheet&quot; href=&quot;&#39;,
+ &#39;/static/css/style.css&#39;,
+ &#39;&quot;&gt;\n&#39;
+ &#39;    &lt;link rel=&quot;stylesheet&quot; &#39;
+ &#39;href=&quot;https://unpkg.com/purecss@1.0.0/build/pure-min.css&quot; &#39;
+ &#39;integrity=&quot;sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w&quot; &#39;
+ &#39;crossorigin=&quot;anonymous&quot;&gt;\n&#39;
+ &#39;\n&#39;
+ &#39;&lt;/head&gt; \n&#39;
+ &#39;&lt;body&gt;\n&#39;
+ &#39;    &lt;div class=&quot;header&quot;&gt;\n&#39;
+ &#39;        &lt;div class=&quot;branding&quot;&gt;\n&#39;
+ &#39;            &lt;div class=&quot;logo&quot;&gt;\n&#39;
+ &#39;                &lt;a class=&quot;logo-link&quot; href=&quot;&#39;,
+ &#39;/transfers/home&#39;,
+ &#39;&quot;&gt;JZGSKi Online Banking&lt;/a&gt;\n&#39;
+ &#39;                &lt;h2&gt;Jeleniogórska Zachodnia Grupa Spółdzielczo-Kredytowa &#39;
+ &#39;S.A.&lt;/h2&gt;\n&#39;
+ &#39;            &lt;/div&gt;\n&#39;
+ &#39;            &lt;div class=&quot;menu-container&quot;&gt;\n&#39;
+ &#39;                &lt;ul class=&quot;menu&quot;&gt;\n&#39;
+ &#39;                    &lt;li class=&quot;menu-item&quot;&gt;&lt;a href=&quot;&#39;,
+ &#39;/transfers/home&#39;,
+ &#39;&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;         \n&#39;
+ &#39;                    &lt;li class=&quot;menu-item&quot;&gt;&lt;a href=&quot;&#39;,
+ &#39;/transfers/new&#39;,
+ &#39;&quot; class=&quot;active&quot;&gt;Transfer&lt;/a&gt;&lt;/li&gt;\n&#39;
+ &#39;                    &lt;li class=&quot;menu-item&quot;&gt;&lt;a href=&quot;&#39;,
+ &#39;/transfers/history&#39;,
+ &#39;&quot; class=&quot;active&quot;&gt;History&lt;/a&gt;&lt;/li&gt;\n&#39;
+ &#39;                &lt;/ul&gt;\n&#39;
+ &#39;            &lt;/div&gt;\n&#39;
+ &#39;        &lt;/div&gt;\n&#39;
+ &#39;    &lt;/div&gt;\n&#39;
+ &#39;    &lt;div class=&quot;content&quot;&gt;\n&#39;
+ &#39;        &#39;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>node</td>
+                    <td class="code"><pre>&lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n        &#39;&gt;]&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>[&lt;django.template.defaulttags.LoadNode object at 0x7f932d00e940&gt;,
+ &lt;TextNode: &#39;\n\n&lt;!DOCTYPE html&gt; \n&lt;html &#39;&gt;,
+ &lt;django.templatetags.static.StaticNode object at 0x7f932d00e8d0&gt;,
+ &lt;TextNode: &#39;&quot;&gt;\n    &lt;link rel=&quot;stylesh&#39;&gt;,
+ &lt;django.template.defaulttags.URLNode object at 0x7f932d00eeb8&gt;,
+ &lt;TextNode: &#39;&quot;&gt;JZGSKi Online Banking&lt;/&#39;&gt;,
+ &lt;django.template.defaulttags.URLNode object at 0x7f932cffec88&gt;,
+ &lt;TextNode: &#39;&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;         \n&#39;&gt;,
+ &lt;django.template.defaulttags.URLNode object at 0x7f932cffeb38&gt;,
+ &lt;TextNode: &#39;&quot; class=&quot;active&quot;&gt;Transfer&#39;&gt;,
+ &lt;django.template.defaulttags.URLNode object at 0x7f932cffe0f0&gt;,
+ &lt;TextNode: &#39;&quot; class=&quot;active&quot;&gt;History&lt;&#39;&gt;,
+ &lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n        &#39;&gt;]&gt;,
+ &lt;TextNode: &#39;\n        &lt;div class=&quot;side&#39;&gt;,
+ &lt;django.templatetags.static.StaticNode object at 0x7f932cffe320&gt;,
+ &lt;TextNode: &#39;&quot; alt=&quot;My picture&quot; /&gt;\n   &#39;&gt;,
+ &lt;IfNode&gt;,
+ &lt;TextNode: &#39;\n                &lt;/div&gt;\n &#39;&gt;]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render_annotated</code>
+
+          
+            <div class="context" id="c140270100529096">
+              
+                <ol start="897" class="pre-context" id="pre140270100529096">
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        Render the node. If debug is True and an exception occurs during</pre></li>
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        rendering, the exception is annotated with contextual line information</pre></li>
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        where it occurred in the template. For internal usage this method is</pre></li>
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        preferred over using the render method directly.</pre></li>
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="904" class="context-line">
+                <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>            return self.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='905' class="post-context" id="post140270100529096">
+                  
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>        except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>            if context.template.engine.debug and not hasattr(e, &#39;template_debug&#39;):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>                e.template_debug = context.render_context.template.get_exception_info(e, self.token)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>            raise</pre></li>
+                  
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100529096', 'post140270100529096')"><pre>    def __iter__(self):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100529096')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100529096">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n        &#39;&gt;]&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/loader_tags.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100526920">
+              
+                <ol start="55" class="pre-context" id="pre140270100526920">
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                push = block = block_context.pop(self.name)</pre></li>
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                if block is None:</pre></li>
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                    block = self</pre></li>
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                # Create new block so we can store context without thread-safety issues.</pre></li>
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                block = type(self)(block.name, block.nodelist)</pre></li>
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                block.context = context</pre></li>
+                
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                context[&#39;block&#39;] = block</pre></li>
+                
+                </ol>
+              
+              <ol start="62" class="context-line">
+                <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                result = block.nodelist.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='63' class="post-context" id="post140270100526920">
+                  
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                if push is not None:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>                    block_context.push(self.name, push)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>        return result</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>    def super(self):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526920', 'post140270100526920')"><pre>        if not hasattr(self, &#39;context&#39;):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100526920')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100526920">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>block</td>
+                    <td class="code"><pre>&lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n\n&#39;&gt;, &lt;IfNode&gt;, &lt;TextNode: &#39;\n\n&#39;&gt;]&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>block_context</td>
+                    <td class="code"><pre>&lt;django.template.loader_tags.BlockContext object at 0x7f932d7a9dd8&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>push</td>
+                    <td class="code"><pre>&lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n\n&#39;&gt;, &lt;IfNode&gt;, &lt;TextNode: &#39;\n\n&#39;&gt;]&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Block Node: content. Contents: [&lt;TextNode: &#39;\n        &#39;&gt;]&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100528200">
+              
+                <ol start="930" class="pre-context" id="pre140270100528200">
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>    # extend_nodelist().</pre></li>
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>    contains_nontext = False</pre></li>
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>    def render(self, context):</pre></li>
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>        bits = []</pre></li>
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>        for node in self:</pre></li>
+                
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>            if isinstance(node, Node):</pre></li>
+                
+                </ol>
+              
+              <ol start="937" class="context-line">
+                <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>                bit = node.render_annotated(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='938' class="post-context" id="post140270100528200">
+                  
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>                bit = node</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>            bits.append(str(bit))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>        return mark_safe(&#39;&#39;.join(bits))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528200', 'post140270100528200')"><pre>    def get_nodes_by_type(self, nodetype):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100528200')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100528200">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>bit</td>
+                    <td class="code"><pre>&#39;\n\n&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>bits</td>
+                    <td class="code"><pre>[&#39;\n\n&#39;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>node</td>
+                    <td class="code"><pre>&lt;IfNode&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>[&lt;TextNode: &#39;\n\n&#39;&gt;, &lt;IfNode&gt;, &lt;TextNode: &#39;\n\n&#39;&gt;]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render_annotated</code>
+
+          
+            <div class="context" id="c140270100526280">
+              
+                <ol start="897" class="pre-context" id="pre140270100526280">
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        Render the node. If debug is True and an exception occurs during</pre></li>
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        rendering, the exception is annotated with contextual line information</pre></li>
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        where it occurred in the template. For internal usage this method is</pre></li>
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        preferred over using the render method directly.</pre></li>
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="904" class="context-line">
+                <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>            return self.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='905' class="post-context" id="post140270100526280">
+                  
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>        except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>            if context.template.engine.debug and not hasattr(e, &#39;template_debug&#39;):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>                e.template_debug = context.render_context.template.get_exception_info(e, self.token)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>            raise</pre></li>
+                  
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100526280', 'post140270100526280')"><pre>    def __iter__(self):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100526280')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100526280">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;IfNode&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/defaulttags.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100527176">
+              
+                <ol start="302" class="pre-context" id="pre140270100527176">
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>                    match = condition.eval(context)</pre></li>
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>                except VariableDoesNotExist:</pre></li>
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>                    match = None</pre></li>
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>            else:                               # else clause</pre></li>
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>                match = True</pre></li>
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>            if match:</pre></li>
+                
+                </ol>
+              
+              <ol start="309" class="context-line">
+                <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>                return nodelist.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='310' class="post-context" id="post140270100527176">
+                  
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>        return &#39;&#39;</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>class LoremNode(Node):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527176', 'post140270100527176')"><pre>    def __init__(self, count, method, common):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100527176')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100527176">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>condition</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>match</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>nodelist</td>
+                    <td class="code"><pre>[&lt;TextNode: &#39;\n&lt;div class=&quot;article&quot;&gt;\n  &#39;&gt;,
+ &lt;django.template.defaulttags.URLNode object at 0x7f932cdbc208&gt;,
+ &lt;TextNode: &#39;&gt;log in&lt;/a&gt; first&lt;/p&gt;\n&lt;/d&#39;&gt;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;IfNode&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100527880">
+              
+                <ol start="930" class="pre-context" id="pre140270100527880">
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>    # extend_nodelist().</pre></li>
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>    contains_nontext = False</pre></li>
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>    def render(self, context):</pre></li>
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>        bits = []</pre></li>
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>        for node in self:</pre></li>
+                
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>            if isinstance(node, Node):</pre></li>
+                
+                </ol>
+              
+              <ol start="937" class="context-line">
+                <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>                bit = node.render_annotated(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='938' class="post-context" id="post140270100527880">
+                  
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>                bit = node</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>            bits.append(str(bit))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>        return mark_safe(&#39;&#39;.join(bits))</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527880', 'post140270100527880')"><pre>    def get_nodes_by_type(self, nodetype):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100527880')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100527880">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>bit</td>
+                    <td class="code"><pre>(&#39;\n&#39;
+ &#39;&lt;div class=&quot;article&quot;&gt;\n&#39;
+ &#39;    &lt;h3&gt;User not logged in&lt;/h3&gt;\n&#39;
+ &#39;    &lt;p&gt;Please &lt;a href=&#39;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>bits</td>
+                    <td class="code"><pre>[&#39;\n&#39;
+ &#39;&lt;div class=&quot;article&quot;&gt;\n&#39;
+ &#39;    &lt;h3&gt;User not logged in&lt;/h3&gt;\n&#39;
+ &#39;    &lt;p&gt;Please &lt;a href=&#39;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>node</td>
+                    <td class="code"><pre>&lt;django.template.defaulttags.URLNode object at 0x7f932cdbc208&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>[&lt;TextNode: &#39;\n&lt;div class=&quot;article&quot;&gt;\n  &#39;&gt;,
+ &lt;django.template.defaulttags.URLNode object at 0x7f932cdbc208&gt;,
+ &lt;TextNode: &#39;&gt;log in&lt;/a&gt; first&lt;/p&gt;\n&lt;/d&#39;&gt;]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py</code> in <code>render_annotated</code>
+
+          
+            <div class="context" id="c140270100528072">
+              
+                <ol start="897" class="pre-context" id="pre140270100528072">
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        Render the node. If debug is True and an exception occurs during</pre></li>
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        rendering, the exception is annotated with contextual line information</pre></li>
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        where it occurred in the template. For internal usage this method is</pre></li>
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        preferred over using the render method directly.</pre></li>
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="904" class="context-line">
+                <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>            return self.render(context)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='905' class="post-context" id="post140270100528072">
+                  
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>        except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>            if context.template.engine.debug and not hasattr(e, &#39;template_debug&#39;):</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>                e.template_debug = context.render_context.template.get_exception_info(e, self.token)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>            raise</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528072', 'post140270100528072')"><pre>    def __iter__(self):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100528072')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100528072">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.template.defaulttags.URLNode object at 0x7f932cdbc208&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/template/defaulttags.py</code> in <code>render</code>
+
+          
+            <div class="context" id="c140270100528520">
+              
+                <ol start="435" class="pre-context" id="pre140270100528520">
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>                current_app = context.request.resolver_match.namespace</pre></li>
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>            except AttributeError:</pre></li>
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>                current_app = None</pre></li>
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>        # Try to look up the URL. If it fails, raise NoReverseMatch unless the</pre></li>
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>        # {% url ... as var %} construct is used, in which case return nothing.</pre></li>
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>        url = &#39;&#39;</pre></li>
+                
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="442" class="context-line">
+                <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>            url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='443' class="post-context" id="post140270100528520">
+                  
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>        except NoReverseMatch:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>            if self.asvar is None:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>                raise</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>        if self.asvar:</pre></li>
+                  
+                  <li onclick="toggle('pre140270100528520', 'post140270100528520')"><pre>            context[self.asvar] = url</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100528520')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100528520">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>NoReverseMatch</td>
+                    <td class="code"><pre>&lt;class &#39;django.urls.exceptions.NoReverseMatch&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>[{&#39;None&#39;: None, &#39;False&#39;: False, &#39;True&#39;: True}, {}, {}, {&#39;form&#39;: &lt;NewTransferForm bound=False, valid=Unknown, fields=(to_account;amount;title)&gt;}]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>current_app</td>
+                    <td class="code"><pre>&#39;&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>reverse</td>
+                    <td class="code"><pre>&lt;function reverse at 0x7f932ed3c598&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.template.defaulttags.URLNode object at 0x7f932cdbc208&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>url</td>
+                    <td class="code"><pre>&#39;&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_name</td>
+                    <td class="code"><pre>&#39;login&#39;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/urls/base.py</code> in <code>reverse</code>
+
+          
+            <div class="context" id="c140270100527816">
+              
+                <ol start="83" class="pre-context" id="pre140270100527816">
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>                        (key, &#39;:&#39;.join(resolved_path))</pre></li>
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>                    )</pre></li>
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>                else:</pre></li>
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>                    raise NoReverseMatch(&quot;%s is not a registered namespace&quot; % key)</pre></li>
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>        if ns_pattern:</pre></li>
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>            resolver = get_ns_resolver(ns_pattern, resolver, tuple(ns_converters.items()))</pre></li>
+                
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="90" class="context-line">
+                <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))</pre> <span>...</span></li>
+              </ol>
+              
+                <ol start='91' class="post-context" id="post140270100527816">
+                  
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>reverse_lazy = lazy(reverse, str)</pre></li>
+                  
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre140270100527816', 'post140270100527816')"><pre>def clear_url_caches():</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270100527816')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270100527816">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>current_app</td>
+                    <td class="code"><pre>&#39;&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>current_path</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>ns_converters</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>ns_pattern</td>
+                    <td class="code"><pre>&#39;&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>parts</td>
+                    <td class="code"><pre>[&#39;login&#39;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>path</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>prefix</td>
+                    <td class="code"><pre>&#39;/&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolved_path</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver</td>
+                    <td class="code"><pre>&lt;URLResolver &#39;banking.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>urlconf</td>
+                    <td class="code"><pre>&#39;banking.urls&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view</td>
+                    <td class="code"><pre>&#39;login&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>viewname</td>
+                    <td class="code"><pre>&#39;login&#39;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/parallels/.local/lib/python3.5/site-packages/django/urls/resolvers.py</code> in <code>_reverse_with_prefix</code>
+
+          
+            <div class="context" id="c140270080742216">
+              
+                <ol start="615" class="pre-context" id="pre140270080742216">
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>                (lookup_view_s, arg_msg, len(patterns), patterns)</pre></li>
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>            )</pre></li>
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>        else:</pre></li>
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>            msg = (</pre></li>
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>                &quot;Reverse for &#39;%(view)s&#39; not found. &#39;%(view)s&#39; is not &quot;</pre></li>
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>                &quot;a valid view function or pattern name.&quot; % {&#39;view&#39;: lookup_view_s}</pre></li>
+                
+                  <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>            )</pre></li>
+                
+                </ol>
+              
+              <ol start="622" class="context-line">
+                <li onclick="toggle('pre140270080742216', 'post140270080742216')"><pre>        raise NoReverseMatch(msg)</pre> <span>...</span></li>
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '140270080742216')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v140270080742216">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>_prefix</td>
+                    <td class="code"><pre>&#39;/&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>lookup_view</td>
+                    <td class="code"><pre>&#39;login&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>lookup_view_s</td>
+                    <td class="code"><pre>&#39;login&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>m</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>msg</td>
+                    <td class="code"><pre>(&quot;Reverse for &#39;login&#39; not found. &#39;login&#39; is not a valid view function or &quot;
+ &#39;pattern name.&#39;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>n</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>patterns</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>possibilities</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;URLResolver &#39;banking.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  <form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post"

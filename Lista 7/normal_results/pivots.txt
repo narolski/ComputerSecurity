@@ -1,0 +1,52 @@
+GET http://127.0.0.1:8000/ name=http://127.0.0.1:8000/ type=serv linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=3228 notes=6 sig=0x27c56160
+GET http://127.0.0.1:8000/admin/ name=admin type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=302 len=0 notes=3 sig=0xa4dd86ab
+GET http://127.0.0.1:8000/admin/login/ name=login type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1832 notes=4 sig=0x47a45f8b
+POST http://127.0.0.1:8000/admin/login/ DATA:csrfmiddlewaretoken=vdhkDiODvHJeqMT5UVVNcHhJvwdinzqi02x5tTRn9AzNckh9g3GHKdppWDampR0a&username=Smith&password=skipfish&next=/admin/ name=csrfmiddlewaretoken type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2029 notes=2 sig=0xa56b5601
+GET http://127.0.0.1:8000/admin/login/?next=/admin/ name=next type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1845 notes=1 sig=0xa56804d6
+POST http://127.0.0.1:8000/admin/login/ DATA:csrfmiddlewaretoken=vdhkDiODvHJeqMT5UVVNcHhJvwdinzqi02x5tTRn9AzNckh9g3GHKdppWDampR0a&username=Smith&password=skipfish&next=/admin/ name=password type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2029 notes=2 sig=0xbdad678d
+POST http://127.0.0.1:8000/admin/login/ DATA:csrfmiddlewaretoken=vdhkDiODvHJeqMT5UVVNcHhJvwdinzqi02x5tTRn9AzNckh9g3GHKdppWDampR0a&username=Smith&password=skipfish&next=/admin/ name=username type=param linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=2029 notes=2 sig=0xbdad678d
+GET http://127.0.0.1:8000/home/ name=home type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2839 notes=1 sig=0xdf027371
+GET http://127.0.0.1:8000/home/parallels/ name=parallels type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2869 notes=1 sig=0x1932ff11
+GET http://127.0.0.1:8000/home/parallels/.local/ name=.local type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2890 notes=0 sig=0xcc781cf7
+GET http://127.0.0.1:8000/home/parallels/.local/lib/ name=lib type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2902 notes=0 sig=0x85dc8854
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/ name=python3.5 type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2932 notes=1 sig=0xef799066
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/ name=site-packages type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2974 notes=1 sig=0xb451a5ca
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/ name=django type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2995 notes=0 sig=0xef7edfe7
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/core/ name=core type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3010 notes=1 sig=0x8d9bd645
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/core/handlers/ name=handlers type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3037 notes=1 sig=0xf7baa19c
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/core/handlers/base.py name=base.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3058 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/core/handlers/exception.py name=exception.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3073 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/ name=template type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3022 notes=1 sig=0xb1ef3698
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/backends/ name=backends type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3049 notes=1 sig=0xf64621de
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/backends/django.py name=django.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3076 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/base.py name=base.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3043 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/defaulttags.py name=defaulttags.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3064 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/loader.py name=loader.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3049 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/template/loader_tags.py name=loader_tags.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3064 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/urls/ name=urls type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3010 notes=1 sig=0x43e84ac6
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/urls/base.py name=base.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3031 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/urls/resolvers.py name=resolvers.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3046 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/lib/python3.5/site-packages/django/shortcuts.py name=shortcuts.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3031 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/share/ name=share type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2908 notes=1 sig=0xe73a80fb
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/ name=Trash type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2926 notes=1 sig=0x4a52da22
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/ name=files type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2944 notes=1 sig=0x5295ebaf
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/Banking/ name=Banking type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2968 notes=1 sig=0x9bbde01
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/Banking/onlinebank/ name=onlinebank type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3001 notes=1 sig=0x9b9de41
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/Banking/onlinebank/templates/ name=templates type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3031 notes=1 sig=0xb5a925d8
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/Banking/onlinebank/templates/onlinebank/ name=onlinebank type=dir linked=maybe browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=3064 notes=0 sig=0x3076e339
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/Banking/onlinebank/templates/onlinebank/base.html name=base.html type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3091 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/home/parallels/.local/share/Trash/files/Banking/onlinebank/views.py name=views.py type=unknown linked=maybe browsers=0 browser_used=FAST dup=1 returns_404 code=404 len=3025 notes=0 sig=0xffdfffff
+GET http://127.0.0.1:8000/static/ name=static type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=1651 notes=4 sig=0xbfb70975
+GET http://127.0.0.1:8000/static/admin/ name=admin type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=1663 notes=1 sig=0x7397a9bd
+GET http://127.0.0.1:8000/static/admin/css/ name=css type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=1671 notes=3 sig=0x41e558e4
+GET http://127.0.0.1:8000/static/admin/css/base.css/ name=base.css type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=16225 notes=3 sig=0xb5aaeece
+GET http://127.0.0.1:8000/static/admin/css/login.css/ name=login.css type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=1203 notes=4 sig=0xfc01ba51
+GET http://127.0.0.1:8000/static/admin/css/responsive.css/ name=responsive.css type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=17976 notes=3 sig=0xb5aaeece
+GET http://127.0.0.1:8000/static/css/ name=css type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=1659 notes=3 sig=0x20f51ecd
+GET http://127.0.0.1:8000/static/css/style.css/ name=style.css type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=10650 notes=4 sig=0x87df4ded
+GET http://127.0.0.1:8000/static/img/ name=img type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=1659 notes=3 sig=0xa4d6168f
+GET http://127.0.0.1:8000/static/img/profile.jpg/ name=profile.jpg type=dir linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=28102 notes=2 sig=0x8d9a99fb
+GET http://127.0.0.1:8000/transfers/ name=transfers type=dir linked=yes browsers=0 browser_used=FAST dup=0 returns_404 code=404 len=2854 notes=1 sig=0x8b91567a
+GET http://127.0.0.1:8000/transfers/history name=history type=file linked=yes browsers=0 browser_used=FAST dup=0 code=500 len=159179 notes=4 sig=0xbb0f707
+GET http://127.0.0.1:8000/transfers/home name=home type=file linked=yes browsers=0 browser_used=FAST dup=0 code=200 len=3228 notes=2 sig=0xc5c48c63
+GET http://127.0.0.1:8000/transfers/new name=new type=file linked=yes browsers=0 browser_used=FAST dup=0 code=500 len=163905 notes=4 sig=0x5924522f

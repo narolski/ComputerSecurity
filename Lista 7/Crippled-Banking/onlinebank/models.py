@@ -26,7 +26,14 @@ class Transfer(models.Model):
    
     title = models.CharField(max_length=60, blank=False, null=False)
     amount = models.DecimalField(max_digits=22, decimal_places=2)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return "Transfer from: {}, to: {}, for amount: {}, title: {}".format(self.from_account, self.to_account, self.amount, self.title)
+
+
+class Feedback(models.Model):
+    content = models.CharField(null=False, max_length=512)
+
+    def __str__(self):
+        return "Feedback: {}".format( self.content)

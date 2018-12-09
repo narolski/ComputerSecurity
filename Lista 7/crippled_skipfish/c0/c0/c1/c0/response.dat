@@ -1,0 +1,50 @@
+HTTP/1.1 200 OK
+Date: Sun, 09 Dec 2018 21:00:30 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Length: 2647
+Content-Type: text/html; charset=utf-8
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: csrftoken=bwMpPl3gHz5U5FEOYH7Q4q2cwzQqUS7slRIHHzwkXhYbc5OyBel2PFIdYmDzyFQQ; expires=Sun, 08 Dec 2019 21:00:30 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+
+
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head>  
+    <meta charset="utf-8"> 
+    <title>Jeleniogórska Zachodnia Grupa Kredytowa</title> 
+    <meta name="description" content="My Journey Through Computer Science">
+    <meta name="author" content="Paweł Narolski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+</head> 
+<body>
+    <div class="header">
+        <div class="branding">
+            <div class="logo">
+                <a class="logo-link" href="/transfers/home">JZGKi Account Set-up</a>
+                <h2>Jeleniogórska Zachodnia Grupa Spółdzielczo-Kredytowa S.A.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <form method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="hI041wxdzdrjbsBpLLrUBuVpgWpMXcw3r3WmTK0hPVkAiSL9oiF6mJBqIJcVBZfr">
+            <p class="required"><label class="required" for="id_username">Użytkownik:</label> <input type="text" name="username" value="Smith" id="id_username" autofocus maxlength="150" required> <span class="helptext">Wymagana. 150 lub mniej znaków. Jedynie litery, cyfry i @/./+/-/_.</span></p>
+<p class="required"><label class="required" for="id_email">Adres email:</label> <input type="email" name="email" value="skipfish@example.com" id="id_email" maxlength="254" required></p>
+<p class="required"><label class="required" for="id_password1">Hasło:</label> <input type="password" name="password1" id="id_password1" required> <span class="helptext"><ul><li>Twoje hasło nie może być zbyt podobne do twoich innych danych osobistych.</li><li>Twoje hasło musi zawierać co najmniej 8 znaków.</li><li>Twoje hasło nie może być powszechnie używanym hasłem.</li><li>Twoje hasło nie może składać się tylko z cyfr.</li></ul></span></p>
+<ul class="errorlist"><li>Hasło jest zbyt podobne do adres email.</li></ul>
+<p class="required error"><label class="required" for="id_password2">Potwierdzenie hasła:</label> <input type="password" name="password2" id="id_password2" required> <span class="helptext">Wprowadź to samo hasło ponownie, dla weryfikacji.</span></p>
+            <button type="submit" class="pure-button" id="btn-send-transfer">Create account</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="about">
+            <p>Designed by Paweł Narolski.</p>
+        </div>
+    </div>
+</body> 
+</html> 

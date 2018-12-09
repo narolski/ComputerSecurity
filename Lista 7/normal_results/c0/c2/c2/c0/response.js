@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 200 OK\x0aDate: Sat, 01 Dec 2018 10:27:56 GMT\x0aServer: WSGIServer/0.2 CPython/3.5.3\x0aContent-Type: image/jpeg\x0aContent-Length: 28102\x0aLast-Modified: Fri, 30 Nov 2018 07:58:48 GMT\x0a\x0a\xff\xd8\xff\xe0'}

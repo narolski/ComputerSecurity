@@ -12,4 +12,6 @@ urlpatterns = [
     path('transfers/confirm', views.confirm_transfer, name="confirm_transfer"),
     path('transfers/complete', views.complete_transfer, name="complete_transfer"),
     path('transfers/history', views.history, name="history"),
+    path('manager/accept', views.accept_transfer, name="accept_transfer"),
+    path('feedback', views.feedback, name="feedback"),
 ]

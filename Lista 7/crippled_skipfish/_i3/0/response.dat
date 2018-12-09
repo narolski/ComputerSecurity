@@ -1,0 +1,36 @@
+HTTP/1.1 200 OK
+Date: Sun, 09 Dec 2018 21:00:22 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Type: text/html; charset=utf-8
+Expires: Sun, 09 Dec 2018 21:00:22 GMT
+Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+Content-Length: 1612
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: csrftoken=nor4KZlcoAKlGZAuZBFVAJ8cA1fYiYfLKEup8gyRvXTcatv9gflOyAtDgikxfRN0; expires=Sun, 08 Dec 2019 21:00:22 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+
+
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head>  
+    <meta charset="utf-8"> 
+    <title>Jeleniogórska Zachodnia Grupa Kredytowa</title> 
+    <meta name="description" content="My Journey Through Computer Science">
+    <meta name="author" content="Paweł Narolski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+</head> 
+<body>
+    <div class="header">
+        <div class="branding">
+            <div class="logo">
+                <a class="logo-link" href="/transfers/home">JZGKi Secure Log-in</a>
+                <h2>Jeleniogórska Zachodnia Grupa Spółdzielczo-Kredytowa S.A.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <form method="POST"

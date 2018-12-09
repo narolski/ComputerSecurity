@@ -25,9 +25,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_USE_TLS = True
 
 # Security
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIES_SECURE = True
-CSRF_COOKIES_SECURE = True
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIES_SECURE = False
+CSRF_COOKIES_SECURE = False
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -42,6 +42,15 @@ ALLOWED_HOSTS = []
 
 # Login redirect
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+# Password hashers
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+]
 
 ACCOUNT_ACTIVATION_DAYS = 7
 
@@ -99,6 +108,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
 
 
 # Password validation

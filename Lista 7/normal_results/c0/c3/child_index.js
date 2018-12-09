@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 8, 'name': 'history', 'dir': 'c0', 'linked': 2, 'url': 'http://127.0.0.1:8000/transfers/history', 'fetched': true, 'code': 500, 'len': 159179, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 2, 1, 0, 1, 0 ], 'sig': 0xbb0f707 },
+  { 'dupe': false, 'type': 8, 'name': 'home', 'dir': 'c1', 'linked': 2, 'url': 'http://127.0.0.1:8000/transfers/home', 'fetched': true, 'code': 200, 'len': 3228, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 1, 0, 1, 0 ], 'sig': 0xc5c48c63 },
+  { 'dupe': false, 'type': 8, 'name': 'new', 'dir': 'c2', 'linked': 2, 'url': 'http://127.0.0.1:8000/transfers/new', 'fetched': true, 'code': 500, 'len': 163905, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 2, 1, 0, 1, 0 ], 'sig': 0x5924522f }
+];

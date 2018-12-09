@@ -1,0 +1,76 @@
+HTTP/1.1 200 OK
+Date: Sat, 01 Dec 2018 10:28:01 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Length: 3228
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+
+
+
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head>  
+    <meta charset="utf-8"> 
+    <title>Jeleniogórska Zachodnia Grupa Kredytowa</title> 
+    <meta name="description" content="My Journey Through Computer Science">
+    <meta name="author" content="Paweł Narolski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+</head> 
+<body>
+    <div class="header">
+        <div class="branding">
+            <div class="logo">
+                <a class="logo-link" href="/transfers/home">JZGSKi Online Banking</a>
+                <h2>Jeleniogórska Zachodnia Grupa Spółdzielczo-Kredytowa S.A.</h2>
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item"><a href="/transfers/home">Home</a></li>         
+                    <li class="menu-item"><a href="/transfers/new" class="active">Transfer</a></li>
+                    <li class="menu-item"><a href="/transfers/history" class="active">History</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        
+<div class="article">
+    <h3>Narodowe standardy bankowości elektronicznej zaczynają się w JZGSKi!</h3>
+    <p>On this site you will find some stuff regarding the courses that I've attended during my studies, as well as some info on my extra-curricular activities.
+    </p>
+    <p>I did my best to make sure the stuff here wouldn't be boring as hell, so make sure to give me some credit here and there.</p>
+    <h4>About the site</h4>
+    <p>The site was written in pure HTML 5 and CSS 3 with the mobile-first approach. In terms of the rules applied here:</p>
+    <ul>
+        <li>Contrast is applied as much as possible, though the site is mostly kept in minimal fashion.</li>
+        <li>Repetitions are pretty much omnipresent here, but without too much excess.</li>
+        <li>Aligment of the elements is carefully planned, with the Golden Rule and the common sense especially kept in mind.</li>
+        <li>Proximity of the objects which belong to the same group is kept.</li>
+    </ul>
+    <p>The negative space is used to make some room for breathing, and the colors are used to draw the user's attention to the UI features.</p>
+    <p>No frameworks or other technologies were used here apart from the beforementioned.</p>
+</div>
+
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="biography animated fadeInUp">
+                    <img class="profile-pic" src="/static/img/profile.jpg" alt="My picture" />
+                    
+                        <p class="biography-c">You are not logged in.</p>
+                        <p class="biography-c">Please log in to continue.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="about">
+            <p>Designed by Paweł Narolski.</p>
+        </div>
+    </div>
+</body> 
+</html> 

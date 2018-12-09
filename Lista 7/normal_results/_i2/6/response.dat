@@ -1,0 +1,634 @@
+HTTP/1.1 200 OK
+Date: Sat, 01 Dec 2018 10:28:01 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Type: text/css
+Content-Length: 10650
+Last-Modified: Thu, 29 Nov 2018 19:49:39 GMT
+
+@media screen and (max-width: 450px) {
+    .logo h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+    .grid-2 {
+        float: left;
+        min-width: 100%;
+        margin-right: 0;
+    }
+    
+    .grid-2.picker {
+        margin-bottom: 1%;
+    }
+    
+    .grid-2.picker:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu-container {
+        float: left;
+        min-width: 100%;
+        display: inline-block;
+    }
+    
+    .menu {
+        float: left !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sidebar {
+        min-width: 100%;
+    }
+    
+    .sidebar-content {
+        min-width: 100%;
+    }
+    
+    .sidebar-content:first-of-type {
+        min-width: 100%;
+        padding-top: 1em;
+    }
+    
+    .logo {
+        min-width: 100%;
+        padding-top: 1em;
+
+    }
+    
+    .article {
+        min-width: 100%;
+    }
+    
+    .logo h1 {
+        line-height: 0.9em
+    }
+    
+    .logo h2 {
+        font-size: 1em;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.header {
+    background: #FAFAFA;
+    width: 100%;
+    float: left;
+}
+
+.logo {
+    width: 60%;
+    float: left;
+}
+
+.menu-container {
+    width: 40%;
+    float: left;
+}
+
+.menu {
+    list-style-type: none;
+    float: right;
+}
+
+.menu-item {
+    float: left;
+    display: inline-block;
+    padding: 1.7em 16px 0 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 400;
+    color: darkgrey;
+}
+
+.menu a:hover {
+    color: #1A237E;
+    font-weight: 500;
+}
+
+
+
+body {
+    font-family: SF Display, Open Sans, sans-serif;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+
+.header-content {
+    padding: 5% 10%;
+}
+
+.branding {
+    width: 70%;
+    padding: 5% 15%;
+    float: left;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 0;
+}
+
+.content {
+    float: left;
+    margin: 5% 15% 5% 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 13pt;
+}
+
+h3 {
+    font-size: 20pt
+}
+
+.article {
+    float: left;
+    width: 65%;
+    margin-right: 5%;
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+}
+
+.sidebar-content {
+    float:left;
+}
+
+.sidebar-content.next {
+    padding-top: 1em;
+}
+
+.biography {
+    background-color: #FAFAFA;
+    padding: 2em 2em;
+}
+
+.biography-content {
+    color: #616161;
+}
+
+.biography-c {
+    font-style: italic;
+    color: dimgray
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    color: lightgray;
+    font-weight: 300;
+}
+
+
+.footer {
+    float: left;
+    margin: 0% 15% 5% 15%;
+    border-top: 1px solid lightgray;
+    width: 70%;
+}
+
+.first {
+    
+}
+
+.grid-2 {
+    float: left;
+    width: 48%;
+    margin-right:2%;
+}
+
+.grid-2.picker {
+    height: 6em;
+    background: #396afc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.grid-2.picker:hover {
+    background: #1A237E
+;  /* fallback for old browsers */
+}
+
+[class*='grid-2']:last-of-type {
+      margin-right:0;
+}
+
+.row:first-of-type {
+    padding-top: 0%;
+}
+
+.row {
+    padding-top: 2%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.grid-label {
+    display: table;
+    margin: 2em auto;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+
+
+.course-header {
+    padding-top: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+.course {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+}
+
+.course:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.prior {
+    padding-top: 1em;
+}
+
+.date {
+    color: lightgray;
+    font-style: regular;
+    font-size: 0.95em;
+    font-style: italic
+}
+
+.article-image {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+.quote-name {
+    font-size: 0.85em;
+}
+
+.logo-link {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.5em;
+}
+/*---------------------------------------------------------------------------*
+ * SF UI Display
+ *---------------------------------------------------------------------------*/
+
+/** Black */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 900;
+  src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+}
+
+/** Bold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
+}
+
+/** Thin */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 300;
+  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+/** Ultralight */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
+}
+
+/*---------------------------------------------------------------------------*
+ * SF UI Text
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Text-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Text-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-SemiboldItalic.otf");
+}
+
+/** Ultrathin */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Text-Ultrathin.otf");
+}
+
+/** Ultrathin Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-UltrathinItalic.otf");
+}
+
+/*---------------------------------------------------------------------------*
+ * SF Mono
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SFMono-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SFMono-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SFMono-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SFMono-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SFMono-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SFMono-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
+}
+II=¹‹ÅÇÑ%

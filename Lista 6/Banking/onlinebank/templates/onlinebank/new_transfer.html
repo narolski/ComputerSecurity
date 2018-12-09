@@ -5,7 +5,8 @@
 {% if user.is_authenticated %}
 <div class="article">
     <h3>New bank transfer</h3>
-    <form method="POST" class="pure-form">{% csrf_token %}
+    <form method="POST" class="pure-form">
+        {% csrf_token %}
         <div>
         <table>
         {{ form.as_p }}

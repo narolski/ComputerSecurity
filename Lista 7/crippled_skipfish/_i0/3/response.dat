@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Date: Sun, 09 Dec 2018 21:00:22 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Length: 2521
+Content-Type: text/html; charset=utf-8
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: csrftoken=bwMpPl3gHz5U5FEOYH7Q4q2cwzQqUS7slRIHHzwkXhYbc5OyBel2PFIdYmDzyFQQ; expires=Sun, 08 Dec 2019 21:00:22 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+
+
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head>  
+    <meta charset="utf-8"> 
+    <title>Jeleniogórska Zachodnia Grupa Kredytowa</title> 
+    <meta name="description" content="My Journey Through Computer Science">
+    <meta name="author" content="Paweł Narolski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"

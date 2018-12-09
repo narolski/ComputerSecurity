@@ -10,11 +10,11 @@
         {% csrf_token %}
         <div>
         <ul id="transfer-details">
-            { % autoescape off % }
+            <!-- { % autoescape off % } -->
             <li>Receiver's account number: {{ to_account }}</li>
             <li>Transfer amount: {{ amount }} PLN</li>
             <li>Transfer title: {{ title }}</li>
-            { % endautoescape % }
+            <!-- { % endautoescape % } -->
         </ul>
         </div>
         <button type="submit" class="pure-button">Transfer history</button>

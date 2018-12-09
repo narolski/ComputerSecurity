@@ -1,0 +1,105 @@
+HTTP/1.1 200 OK
+Date: Sat, 01 Dec 2018 10:34:19 GMT
+Server: WSGIServer/0.2 CPython/3.5.3
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Content-Length: 2029
+Cache-Control: no-store, no-cache, max-age=0, must-revalidate
+Expires: Sat, 01 Dec 2018 10:34:19 GMT
+Set-Cookie: csrftoken=8N5xILBMzz1mplrpMtQYb518IGDo4iNbDCliymEwdsRVbTPt8BBSJB9O9NAs6An3; expires=Sat, 30 Nov 2019 10:34:19 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+<!DOCTYPE html>
+
+<html lang="pl-pl" >
+<head>
+<title>Zaloguj się | Administracja stroną Django</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+<link rel="stylesheet" type="text/css" href="/static/admin/css/login.css">
+
+
+
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" login"
+  data-admin-utc-offset="3600">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">Administracja Django</a></h1>
+
+        </div>
+        
+        
+    </div>
+    <!-- END Header -->
+    
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        
+        
+
+
+
+
+<p class="errornote">
+    Wprowadź poprawne dane w polach „użytkownik” i „hasło” dla konta należącego do zespołu. Uwaga: wielkość liter może mieć znaczenie.
+</p>
+
+
+
+<div id="content-main">
+
+
+
+<form action="/admin/login/" method="post" id="login-form"><input type="hidden" name="csrfmiddlewaretoken" value="1SUMjcVJMLp2Rie7IOnrHWjkLWffei0EwHax9NYtqEfBDQCb4W8lfsr0c3cjgAAw">
+  <div class="form-row">
+    
+    <label class="required" for="id_username">Użytkownik:</label> <input type="text" name="username" value="Smith" id="id_username" autofocus required>
+  </div>
+  <div class="form-row">
+    
+    <label class="required" for="id_password">Hasło:</label> <input type="password" name="password" id="id_password" required>
+    <input type="hidden" name="next" value="/admin/">
+  </div>
+  
+  
+  <div class="submit-row">
+    <label>&nbsp;</label><input type="submit" value="Zaloguj się">
+  </div>
+</form>
+
+</div>
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>

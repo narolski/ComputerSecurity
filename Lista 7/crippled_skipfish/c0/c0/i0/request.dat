@@ -1,0 +1,11 @@
+GET /accounts/'" HTTP/1.1
+Host: 127.0.0.1:8000
+Accept-Encoding: gzip
+Connection: keep-alive
+Range: bytes=0-399999
+Authorization: Basic cGF3ZWxuYXJvbHNraTpwYXdlbDEyLmNvLnVr
+User-Agent: sfish'"
+Referer: sfish'"
+Accept-Language: sfish'",en
+Cookie: csrftoken=Uk2dq9V3C15VtcRfJQNYfARmzjPNNqjIynbbq57hpUYX3QThqOLhYbdKIntDpFXH
+
