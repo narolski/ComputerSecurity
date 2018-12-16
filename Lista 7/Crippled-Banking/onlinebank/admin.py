@@ -4,7 +4,7 @@ from .models import Transfer, Feedback
 
 @admin.register(TransferRequest)
 class TransferRequestAdmin(admin.ModelAdmin):
-    fields = ('from_account', 'to_account', 'title', 'amount', 'date')
+    fields = ('from_account', 'to_account', 'title', 'amount')
 
 @admin.register(Transfer)
 class TransferAdmin(admin.ModelAdmin):

@@ -1,0 +1,32 @@
+{% extends 'onlinebank/base.html' %}
+
+{% block content %}
+
+{% if user.is_superuser %}
+
+<div class="article">
+    <h3>Transfer accepted by administrator</h3>
+    <p>Thank you for your help.</p>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+        <ul id="transfer-details">
+            <!-- { % autoescape off % } -->
+            <li>From account: {{ from_account_id }}</li>
+            <li>Receiver's account number: {{ to_account }}</li>
+            <li>Transfer amount: {{ amount }} PLN</li>
+            <li>Transfer title: {{ title }}</li>
+            <!-- { % endautoescape % } -->
+        </ul>
+        </div>
+    </form>
+
+</div>
+{% else %}
+<div class="article">
+    <h3>User does not have enough rights in</h3>
+    <p>Please log in first</p>
+</div>
+{% endif %}
+
+{% endblock %}

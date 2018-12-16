@@ -1,0 +1,77 @@
+{% extends 'onlinebank/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .slider { width: 100%; padding-bottom: 25%; height:38%; }
+    .slider img { width: 100%; height: 100%;}
+    .wrapper { width: 100%; padding-bottom: 120px; height:300px; }
+    @media only screen and (min-width: 1024px) {
+      .wrapper { width: 1024px; margin: auto; }
+    }
+    .content {
+        margin-top: 0% !important;
+    }
+</style>
+<div class="wrapper">
+<div class="slider" id="myslider">
+        <img src="{% static 'img/photo4.jpg' %}"/>
+        <img src="{% static 'img/photo2.jpg' %}"/>
+        <img src="{% static 'img/photo3.jpg' %}"/>
+        <img src="{% static 'img/photo1.jpg' %}"/>
+</div>
+</div>
+<script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+<script>
+    simpleslider.getSlider({
+      container: document.getElementById('myslider'),
+      init: 100,
+      show: 0,
+      end: -100,
+      unit: '%',
+      delay: 6.5,
+    });
+</script>
+<div class="article">
+    <h3>Meet the new national online banking standards. Meet JZGSKi Online Banking.</h3>
+    <p>We would like to welcome you to our new, state-of-the-art online banking platform, designed from the ground up with the security in mind.</p>
+    <h4>What would you like to do today?</h4>
+    {% if user.is_authenticated %}
+    <div class="grid-picker">
+        <div class="row">
+            <div class="grid-2 picker">
+                <a href="{% url 'new_transfer' %}" class="grid-label">Perform new bank transfer</a>
+            </div>
+            <div class="grid-2 picker">
+                <a href="{% url 'history' %}" class="grid-label">See transaction history</a>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="grid-picker">
+            <div class="row">
+                <div class="grid-2 picker">
+                    <a href="accounts/login" class="grid-label">Log in to existing account</a>
+                </div>
+                <div class="grid-2 picker">
+                    <a href="accounts/register" class="grid-label">Create new account</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid-2 picker">
+                    <a href="accounts/password_reset" class="grid-label">Forgot password?</a>
+                </div>
+                <div class="grid-2 picker">
+                    <a href="https://zagorski.im.pwr.wroc.pl" class="grid-label">About our bank</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div>
+    <h3 class="prior">Our mission</h3>
+    <p>Our team of highly-skilled IT professionals would like to wish you a pleasureable experience with handling your money in Jeleniogórska Zachodnia Grupa Kredytowa.</p>
+    <p>We would like to invite you to see banking products' offers of our other branch, <b>Zachodnia Spółdzielnia Pożyczkowa</b>.</p>
+    </div>
+    
+</div>
+{% endblock %}

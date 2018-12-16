@@ -1,0 +1,30 @@
+{% extends 'onlinebank/base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<div class="article">
+    <h3>Transfer confirmation</h3>
+    <p>Please confirm that the details below are correct.</p>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+        <ul id="transfer-details">
+            <li>Receiver's account number: {{ to_account }}</li>
+            <li>Transfer amount: {{ amount }} PLN</li>
+            <li>Transfer title: {{ title }}</li>
+        </ul>
+        </div>
+        <button type="submit" class="pure-button">Confirm transfer</button>
+        <div class="pure-button" onclick="location.href='{% url 'home' %}'">Save for later</div>
+    </form>
+
+</div>
+{% else %}
+<div class="article">
+    <h3>User not logged in</h3>
+    <p>Please log in first</p>
+</div>
+{% endif %}
+
+{% endblock %}

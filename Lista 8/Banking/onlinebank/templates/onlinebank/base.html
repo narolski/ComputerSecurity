@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head>  
+    <meta charset="utf-8"> 
+    <title>Jeleniogórska Zachodnia Grupa Kredytowa</title> 
+    <meta name="description" content="My Journey Through Computer Science">
+    <meta name="author" content="Paweł Narolski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+</head> 
+<body>
+    <div class="header">
+        <div class="branding">
+            <div class="logo">
+                <a class="logo-link" href="{% url 'home' %}">JZGSKi Online Banking</a>
+                <h2>Jeleniogórska Zachodnia Grupa Spółdzielczo-Kredytowa S.A.</h2>
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item"><a href="{% url 'home' %}">Home</a></li>         
+                    {% if user.is_authenticated %}
+                    <li class="menu-item"><a href="{% url 'new_transfer' %}" class="active">Transfer</a></li>
+                    <li class="menu-item"><a href="{% url 'history' %}" class="active">History</a></li>
+                    <li class="menu-item"><a href="{% url 'logout' %}" class="active">Logout</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="biography animated fadeInUp">
+                    {% if request.user.is_authenticated %}
+                        <img class="profile-pic" src="{% static 'img/profile.jpg' %}" alt="My picture" />
+                        <p class"biography-c">You are now logged in as <b>{{ user.username }}</b></p>
+                        <p class="biography-c">Thank you for using the services of Jeleniogórska Zachodnia Grupa Kredytowa S.A and our JZGSKi Online Banking platform.</p>
+                    {% else %}
+                        <h4>Howdy, stranger!</h4>
+                        <p class="biography-c">You are not logged in to your bank account at the moment.</p>
+                        <p class="biography-c">We encourage you to log in to the JZGSKi or to create a new bank account today!</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="about">
+            <p>Designed by Paweł Narolski.</p>
+        </div>
+    </div>
+</body> 
+</html> 
